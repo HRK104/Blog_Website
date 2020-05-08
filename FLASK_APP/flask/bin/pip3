@@ -1,4 +1,4 @@
-#!/Users/suzukimiyuki/Desktop/python_lesson/FLASK_APP/flask/bin/python
+#!/Users/suzukimiyuki/Desktop/Blog_Website/FLASK_APP/flask/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -9,28 +9,32 @@
 {% block body %}
 <br>
 <div>
-<h1 style="display: inline">All Posts</h1>
-<a class="btn btn-success float-right" href="/posts/new">+ New Post</a>
+<h1 style="display: inline">My Works</h1>
+<!-- <a class="btn btn-success float-right" href="/posts/new">+ New Post</a> -->
 </div>
 <hr>
 
 
 {% for post in posts%}
 <br>
-  <h2>{{ post.title }}</h2>
+  <a  href={{post.url}}><h2>{{ post.title }}</h2></a>
+  
 
-  {% if post.author %} 
-    <small>Written by {{post.author}} on {{ post.date_posted}}</small>
-  {% else %} 
-    <small>Written by Unknown on {{ post.date_posted}}</small>
-  {% endif%}
+  <a href={{post.url}}><img src ={{post.content}}  alt="..." height ="300" ></a>
+  <br>
   <br>
   <br>
 
-  <p style="white-space:pre-wrap">{{post.content}}</p>
+  <a>{{ post.explanation }}</a>
+  
+
+  <!-- <p style="white-space:pre-wrap">{{post.content}}</p>
   <a class="btn btn-danger" href='/posts/delete/{{post.id}}'>Delete</a>
-  <a class="btn btn-primary" href='/posts/edit/{{post.id}}'>Edit</a>
+  <a class="btn btn-primary" href='/posts/edit/{{post.id}}'>Edit</a> -->
   <hr>
 {% endfor %}
-
+<br>
+<h4>You can see my other works <a href="https://github.com/HRK104">here</a></h4>
+<br>
+<br>
  {% endblock %}
