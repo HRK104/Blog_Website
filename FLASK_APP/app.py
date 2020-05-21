@@ -42,6 +42,9 @@ def posts():
 def contact():
     return render_template('contact.html')
 
+@app.route('/2-16_calculator')
+def CalculatorOf2_16():
+    return render_template('2-16_Calculator.html')
 
 
 
